@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));//root mai reactDom se root  jo id h div ki index.html mai usko acces krenge aise document.getElementById('root')
+                                                                    // root ko render kr diya
 root.render(
+  // render se hum kya dikhana h wo btata h jaise yaha pr App component ko
   <React.StrictMode>
     <App />
   </React.StrictMode>
+// {/* <h1>hi bro</h1> , document.getElementById(root) */} 
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
